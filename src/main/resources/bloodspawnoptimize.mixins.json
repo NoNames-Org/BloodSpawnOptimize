@@ -1,0 +1,12 @@
+{
+  "required": true,
+  "package": "dev.no.name.bso.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "client": [
+    "EntityRendererMixin",
+    "DisplayRendererMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

@@ -1,0 +1,21 @@
+{
+	"schemaVersion": 1,
+	"id": "bloodspawnoptimize",
+	"version": "${version}",
+	"name": "BloodSpawnOptimize",
+	"description": "Не рисует далёкие и невидимые block/item display — больше FPS на спавне.",
+	"authors": ["Fell", "Aloiner"],
+	"license": "MIT",
+	"icon": "assets/bloodspawnoptimize/icon.png",
+	"environment": "client",
+	"entrypoints": {
+		"client": ["dev.no.name.bso.BloodSpawnOptimize"]
+	},
+	"mixins": ["bloodspawnoptimize.mixins.json"],
+	"depends": {
+		"fabricloader": ">=0.20.1",
+		"minecraft": "${minecraft_dependency}",
+		"java": ">=${java_version}",
+		"fabric-api": "*"
+	}
+}

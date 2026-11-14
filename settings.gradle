@@ -1,0 +1,17 @@
+pluginManagement {
+	repositories {
+		maven {
+			name = 'Fabric'
+			url = 'https://maven.fabricmc.net/'
+		}
+		mavenCentral()
+		gradlePluginPortal()
+	}
+}
+
+rootProject.name = 'bloodspawnoptimize'
+
+['1.21.11', '26.1', '26.3'].each { mc ->
+	include mc
+	project(":$mc").projectDir = file("versions/$mc")
+}
